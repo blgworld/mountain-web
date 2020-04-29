@@ -1,1 +1,483 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#home-page {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  position: relative;
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.3)), to(rgba(0, 0, 0, 0.5))), url(../images/bg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../images/bg.png);
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+}
+
+#home-page .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  top: 30%;
+  /*font-family: 'Muli',
+sans-serif;
+font-family: 'Montserrat',
+sans-serif;*/
+}
+
+#home-page .container .nav-items {
+  text-align: end;
+  margin-right: 7%;
+  line-height: 370%;
+}
+
+#home-page .container .nav-name {
+  text-align: start;
+  font-size: xx-large;
+  margin-left: 7%;
+}
+
+#home-page .container .vl {
+  border: 1px solid white;
+  height: 250px;
+  position: absolute;
+  margin-left: -10px;
+  border-radius: 100px;
+}
+
+#home-page .container h1 {
+  color: white;
+  font-family: "Muli", sans-serif;
+  font-weight: 100;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  letter-spacing: 4px;
+}
+
+#home-page .container h1:hover {
+  color: black;
+}
+
+#home-page .container h2 {
+  font-family: "Muli", sans-serif;
+  font-weight: 100;
+  width: 150px;
+  letter-spacing: 5px;
+  color: white;
+  font-size: 60px;
+}
+
+#home-page .container a {
+  text-decoration: none;
+}
+
+#home-page .container a:hover {
+  color: white;
+}
+
+#home .menu a {
+  text-decoration: none;
+}
+
+#home .menu-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: fixed;
+  cursor: pointer;
+  top: 8%;
+  right: 5%;
+  -webkit-transform: translate(-5%, -50%);
+          transform: translate(-5%, -50%);
+  z-index: 5;
+}
+
+#home .menu-icon img {
+  height: 75px;
+  width: auto;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home .menu-icon img:hover {
+  height: 80px;
+}
+
+#home .nav-links {
+  font-family: "Muli", sans-serif;
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: white;
+  height: 100vh;
+  width: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-clip-path: circle(0px at 91% 10%);
+          clip-path: circle(0px at 91% 10%);
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+  z-index: 3;
+}
+
+#home .nav-links h1 {
+  color: #3b3b3b;
+  font-weight: 600;
+  font-size: 50px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+#home .nav-links h1:hover {
+  color: black;
+}
+
+#home .nav-links ul {
+  color: black;
+  font-size: 30px;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  text-decoration: underline;
+}
+
+#home .nav-links ul:hover {
+  color: #818181;
+  font-size: 35px;
+}
+
+#home .nav-links.open {
+  z-index: 4;
+  -webkit-clip-path: circle(1600px at 88% 10%);
+          clip-path: circle(1600px at 88% 10%);
+}
+
+#home .bg-home {
+  background-color: #2a4359;
+  z-index: -9999999999;
+}
+
+#home .header {
+  cursor: default;
+}
+
+#home .header .over .big-text {
+  font-family: "Muli", sans-serif;
+  position: absolute;
+  overflow-x: hidden;
+  left: 30%;
+  right: 0;
+  top: -18%;
+  font-weight: 100;
+  font-size: 240px;
+  color: #344e63;
+  pointer-events: none;
+}
+
+#home .header .over .big-text h1 {
+  font-weight: 200;
+}
+
+#home .header .small-text {
+  font-family: "Muli", sans-serif;
+  position: relative;
+  margin-left: 27%;
+  top: 50px;
+  color: white;
+}
+
+#home .header .small-text h2 {
+  font-size: 110px;
+  font-weight: 200;
+  cursor: default;
+}
+
+#home .header .star-circle {
+  position: absolute;
+  margin-left: -270px;
+  margin-top: -370px;
+}
+
+#home .header .star-circle img {
+  height: 550px;
+  width: auto;
+}
+
+#home .content {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .content .portrait {
+  padding: 0 15px;
+}
+
+#home .content .portrait img {
+  height: 430px;
+  width: auto;
+}
+
+#home .content .portrait .texts {
+  padding: 0 15px;
+}
+
+#home .content .texts {
+  font-family: "Muli", sans-serif;
+  cursor: default;
+}
+
+#home .content .texts h1 {
+  font-size: 40px;
+  margin-top: -100px;
+  color: #ffffff;
+}
+
+#home .content .texts h2 {
+  margin-left: -80px;
+  margin-top: 90px;
+  margin-bottom: 50px;
+  font-size: 60px;
+  background-color: #e4e4e4;
+  width: 230px;
+  letter-spacing: 10px;
+  color: #2a4359;
+}
+
+#home .content .texts p {
+  font-size: 20px;
+  color: #ffffff;
+}
+
+#home .members {
+  cursor: default;
+}
+
+#home .members .mem-big-text {
+  font-family: "Muli", sans-serif;
+  position: absolute;
+  overflow-x: hidden;
+  left: -700px;
+  font-weight: 100;
+  font-size: 240px;
+  color: #344e63;
+  pointer-events: none;
+  margin-top: -200px;
+}
+
+#home .members .mem-big-text h1 {
+  font-weight: 200;
+}
+
+#home .members .mem-small-text {
+  font-family: "Muli", sans-serif;
+  position: absolute;
+  margin-left: 25%;
+  color: white;
+}
+
+#home .members .mem-small-text h2 {
+  font-size: 80px;
+  font-weight: 200;
+}
+
+#home .members .starcircle {
+  position: relative;
+}
+
+#home .members .starcircle .star-circle-mem {
+  position: absolute;
+  overflow-x: hidden;
+  left: 75%;
+  right: 0;
+  top: -50px;
+}
+
+#home .members .content-mem {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: 70%;
+  margin: 0 auto;
+  margin-top: 120px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .members .content-mem .portrait-mem {
+  margin-top: 10%;
+  z-index: 0;
+}
+
+#home .members .content-mem .portrait-mem img {
+  height: 800px;
+  width: auto;
+  -webkit-clip-path: inset(4% 0 27% 0);
+          clip-path: inset(4% 0 27% 0);
+}
+
+#home .members .content-mem .texts-mem {
+  font-family: "Muli", sans-serif;
+  text-align: right;
+  z-index: 1;
+}
+
+#home .members .content-mem .texts-mem .jude {
+  padding: 11% 0%;
+}
+
+#home .members .content-mem .texts-mem h2 {
+  text-align: center;
+  font-size: 60px;
+  background-color: #e4e4e4;
+  margin-right: -70px;
+  margin-top: -200px;
+  letter-spacing: 10px;
+  color: #2a4359;
+  float: right;
+  width: 250px;
+}
+
+#home .members .content-mem .texts-mem p {
+  font-size: 27px;
+  color: #ffffff;
+  padding-right: 15%;
+  width: 80%;
+  margin-top: -90px;
+  float: right;
+}
+
+#home #members-2 {
+  background-color: #2a4359;
+}
+
+#home #members-2 .starcircle-2 {
+  position: relative;
+}
+
+#home #members-2 .starcircle-2 .star-circle-2 {
+  position: absolute;
+  overflow-x: hidden;
+  margin-left: -300px;
+  left: 0;
+  margin-top: -300px;
+}
+
+#home #members-2 .starcircle-2 .star-circle-2 img {
+  width: 600px;
+  height: auto;
+}
+
+#home .content-mem-2 {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  width: auto;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#home .content-mem-2 .portrait-mem-2 {
+  margin-top: -250px;
+  z-index: 0;
+  margin-left: -150px;
+}
+
+#home .content-mem-2 .portrait-mem-2 img {
+  height: 800px;
+  width: auto;
+  -webkit-clip-path: inset(17% 22% 4% 23%);
+          clip-path: inset(17% 22% 4% 23%);
+}
+
+#home .content-mem-2 .texts-mem-2 {
+  font-family: "Muli", sans-serif;
+  text-align: left;
+  z-index: 1;
+  margin-left: -400px;
+  margin-top: -300px;
+}
+
+#home .content-mem-2 .texts-mem-2 .jack {
+  padding: 11% 0%;
+}
+
+#home .content-mem-2 .texts-mem-2 h2 {
+  text-align: center;
+  font-size: 60px;
+  background-color: #e4e4e4;
+  margin-right: -70px;
+  margin-top: -200px;
+  letter-spacing: 10px;
+  color: #2a4359;
+  float: left;
+  width: 250px;
+}
+
+#home .content-mem-2 .texts-mem-2 p {
+  font-size: 27px;
+  color: #ffffff;
+  padding-right: 15%;
+  width: 80%;
+  margin-top: -90px;
+  float: right;
+}
+/*# sourceMappingURL=styles.css.map */

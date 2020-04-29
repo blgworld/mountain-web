@@ -1,0 +1,450 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+$primary-color: rgb(255, 255, 255);
+$hover-color: rgb(0, 0, 0);
+$background-color: #2a4359;
+$big-txt-color: #344e63;
+$head-org: #ffffff;
+$muli: "Muli",
+sans-serif;
+
+#home-page {
+  transition: 0.5s;
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)),
+    url(../images/bg.png);
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 0.5s;
+
+  .container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: 30%;
+
+    .nav-items {
+      text-align: end;
+      margin-right: 7%;
+      line-height: 370%;
+    }
+
+    .nav-name {
+      text-align: start;
+
+      font-size: xx-large;
+      margin-left: 7%;
+    }
+
+    /*font-family: 'Muli',
+sans-serif;
+font-family: 'Montserrat',
+sans-serif;*/
+    .vl {
+      border: 1px solid rgb(255, 255, 255);
+      height: 250px;
+      position: absolute;
+      margin-left: -10px;
+      border-radius: 100px;
+    }
+
+    h1 {
+      color: $primary-color;
+      font-family: $muli;
+      font-weight: 100;
+      transition: 0.5s;
+      letter-spacing: 4px;
+    }
+
+    h1:hover {
+      color: $hover-color;
+    }
+
+    h2 {
+      font-family: $muli;
+      font-weight: 100;
+      width: 150px;
+      letter-spacing: 5px;
+      color: $primary-color;
+      font-size: 60px;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+#home {
+  .menu {
+    a {
+      text-decoration: none;
+    }
+  }
+
+  .menu-icon {
+    display: flex;
+
+    position: fixed;
+    cursor: pointer;
+    top: 8%;
+    right: 5%;
+
+    transform: translate(-5%, -50%);
+    z-index: 5;
+
+    img {
+      height: 75px;
+      width: auto;
+      transition: 0.5s;
+    }
+
+    img:hover {
+      height: 80px;
+    }
+  }
+
+  .nav-links {
+    font-family: $muli;
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    height: 100vh;
+    width: 100%;
+    flex-direction: column;
+    clip-path: circle(0px at 91% 10%);
+    transition: all 1s ease;
+    z-index: 3;
+
+    h1 {
+      color: rgb(59, 59, 59);
+      font-weight: 600;
+      font-size: 50px;
+      transition: 0.5s;
+    }
+
+    h1:hover {
+      color: black;
+    }
+
+    ul {
+      color: black;
+      font-size: 30px;
+      transition: 0.5s;
+      text-decoration: underline;
+    }
+
+    ul:hover {
+      color: rgb(129, 129, 129);
+      font-size: 35px;
+    }
+  }
+
+  .nav-links.open {
+    z-index: 4;
+    clip-path: circle(1600px at 88% 10%);
+  }
+
+  .bg-home {
+    background-color: $background-color;
+    z-index: -9999999999;
+  }
+
+  .header {
+    cursor: default;
+
+    .over {
+      .big-text {
+        font-family: "Muli", sans-serif;
+        position: absolute;
+        overflow-x: hidden;
+        left: 30%;
+        right: 0;
+        top: -18%;
+        font-weight: 100;
+        font-size: 240px;
+        color: $big-txt-color;
+
+        pointer-events: none;
+
+        h1 {
+          font-weight: 200;
+        }
+      }
+    }
+
+    .small-text {
+      font-family: $muli;
+      position: relative;
+      margin-left: 27%;
+      top: 50px;
+      color: white;
+
+      h2 {
+        font-size: 110px;
+        font-weight: 200;
+        cursor: default;
+      }
+    }
+
+    .star-circle {
+      position: absolute;
+      margin-left: -270px;
+      margin-top: -370px;
+
+      img {
+        height: 550px;
+        width: auto;
+      }
+    }
+  }
+
+  .content {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 120px;
+    justify-content: center;
+    align-items: center;
+
+    .portrait {
+      padding: 0 15px;
+
+      img {
+        height: 430px;
+        width: auto;
+      }
+
+      .texts {
+        padding: 0 15px;
+      }
+    }
+
+    .texts {
+      font-family: $muli;
+      cursor: default;
+
+      h1 {
+        font-size: 40px;
+        margin-top: -100px;
+        color: $head-org;
+      }
+
+      h2 {
+        margin-left: -80px;
+        margin-top: 90px;
+        margin-bottom: 50px;
+        font-size: 60px;
+        background-color: rgb(228, 228, 228);
+        width: 230px;
+        letter-spacing: 10px;
+        color: $background-color;
+      }
+
+      p {
+        font-size: 20px;
+        color: #ffffff;
+      }
+    }
+  }
+
+  .members {
+    cursor: default;
+
+    .mem-big-text {
+      font-family: "Muli", sans-serif;
+      position: absolute;
+      overflow-x: hidden;
+      left: -700px;
+      font-weight: 100;
+      font-size: 240px;
+      color: $big-txt-color;
+      pointer-events: none;
+      margin-top: -200px;
+
+      h1 {
+        font-weight: 200;
+      }
+    }
+
+    .mem-small-text {
+      font-family: $muli;
+      position: absolute;
+
+      margin-left: 25%;
+      color: white;
+
+      h2 {
+        font-size: 80px;
+        font-weight: 200;
+      }
+    }
+
+    .starcircle {
+      position: relative;
+
+      .star-circle-mem {
+        position: absolute;
+        overflow-x: hidden;
+        left: 75%;
+        right: 0;
+        top: -50px;
+      }
+    }
+
+    .content-mem {
+      position: relative;
+      display: flex;
+      flex-direction: row;
+      width: 70%;
+      margin: 0 auto;
+      margin-top: 120px;
+      justify-content: center;
+      align-items: center;
+
+      .portrait-mem {
+        margin-top: 10%;
+        z-index: 0;
+
+        img {
+          height: 800px;
+          width: auto;
+          clip-path: inset(4% 0 27% 0);
+        }
+      }
+
+      .texts-mem {
+        font-family: $muli;
+
+        text-align: right;
+        z-index: 1;
+
+        .jude {
+          padding: 11% 0%;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 60px;
+          background-color: rgb(228, 228, 228);
+          margin-right: -70px;
+          margin-top: -200px;
+          letter-spacing: 10px;
+          color: $background-color;
+          float: right;
+          width: 250px;
+        }
+
+        p {
+          font-size: 27px;
+          color: #ffffff;
+          padding-right: 15%;
+          width: 80%;
+          margin-top: -90px;
+
+          float: right;
+        }
+      }
+    }
+  }
+
+  #members-2 {
+    background-color: $background-color;
+
+    .starcircle-2 {
+      position: relative;
+
+      .star-circle-2 {
+        position: absolute;
+        overflow-x: hidden;
+        margin-left: -300px;
+        left: 0;
+        margin-top: -300px;
+
+        img {
+          width: 600px;
+          height: auto;
+        }
+
+      }
+    }
+
+  }
+
+  .content-mem-2 {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    margin: 0 auto;
+
+    justify-content: center;
+    align-items: center;
+
+    .portrait-mem-2 {
+      margin-top: -250px;
+      z-index: 0;
+      margin-left: -150px;
+
+      img {
+        height: 800px;
+        width: auto;
+        clip-path: inset(17% 22% 4% 23%);
+
+      }
+    }
+
+    .texts-mem-2 {
+      font-family: $muli;
+
+      text-align: left;
+      z-index: 1;
+      margin-left: -400px;
+      margin-top: -300px;
+
+      .jack {
+        padding: 11% 0%;
+      }
+
+      h2 {
+        text-align: center;
+        font-size: 60px;
+        background-color: rgb(228, 228, 228);
+        margin-right: -70px;
+        margin-top: -200px;
+        letter-spacing: 10px;
+        color: $background-color;
+        float: left;
+        width: 250px;
+      }
+
+      p {
+        font-size: 27px;
+        color: #ffffff;
+        padding-right: 15%;
+        width: 80%;
+        margin-top: -90px;
+
+        float: right;
+      }
+    }
+  }
+}
