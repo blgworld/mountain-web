@@ -1,8 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Amiri&display=swap");
 * {
   margin: 0;
   padding: 0;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+#calendar {
+  font-family: "Muli", sans-serif;
+  cursor: default;
+}
+
+#calendar .upcoming-txt {
+  position: relative;
+  width: 29%;
+  margin: 0 auto;
+  text-align: center;
+  z-index: 1;
+}
+
+#calendar .upcoming-txt h1 {
+  position: absolute;
+  text-align: center;
+  background-color: white;
+  color: #2a4359;
+  top: 100px;
+  font-weight: 100;
+  letter-spacing: 14px;
+}
+
+#calendar .texts-cl {
+  margin-left: -20px;
+}
+
+#calendar .small-texts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#calendar .calendar-container {
+  background-image: url(../images/calendar-bg.png);
+  position: relative;
+  height: 100vh;
+  width: auto;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  padding-top: 200px;
+  margin-left: 20px;
+  color: white;
+}
+
+#calendar .calendar-container .cal-date {
+  text-align: end;
+  padding-right: 200px;
+  font-family: 'Amiri', serif;
+}
+
+#calendar .calendar-container .cal-loc {
+  text-align: start;
+  padding-left: 200px;
+  font-family: 'Amiri', serif;
+}
+
+#calendar .calendar-container .vl {
+  border: 1px solid white;
+  height: 250px;
+  position: absolute;
+  margin-left: -45px;
+  border-radius: 100px;
+}
+
+#calendar .calendar-container h1 {
+  font-weight: 100;
+  padding: 30px 0px;
+}
+
+#about {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.5)), to(rgba(0, 0, 0, 0.5))), url(../images/about-bg.png);
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/about-bg.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  width: auto;
+  position: relative;
+  font-family: "Muli", sans-serif;
+}
+
+#about .about-us-txt {
+  position: absolute;
+  left: 50%;
+  margin-right: -50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  top: 20%;
+  background-color: white;
+  padding: 15px;
+}
+
+#about .about-us-txt h1 {
+  letter-spacing: 10px;
+  font-weight: 100;
+  color: #523cb3;
+}
+
+#about .about-us-txts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -51%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  width: 40%;
+  line-height: 70px;
+}
+
+#about .about-us-txts p {
+  font-size: 30px;
+  color: white;
+  font-family: 'Amiri', serif;
 }
 
 #home-page {
@@ -81,6 +231,7 @@ sans-serif;*/
   letter-spacing: 5px;
   color: white;
   font-size: 60px;
+  cursor: default;
 }
 
 #home-page .container a {
@@ -479,5 +630,35 @@ sans-serif;*/
   width: 80%;
   margin-top: -90px;
   float: right;
+}
+
+#home footer {
+  background-color: #292929;
+  font-family: "Muli", sans-serif;
+  color: white;
+}
+
+#home footer .footer-texts .footer-h1 {
+  padding: 150px;
+  cursor: default;
+}
+
+#home footer .footer-texts .footer-h1 a {
+  padding-left: 20px;
+  text-decoration: none;
+  color: whitesmoke;
+  font-weight: 100;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+#home footer .footer-texts .footer-h1 a:hover {
+  color: #929292;
+}
+
+#home footer .footer-texts p {
+  text-align: center;
+  margin-top: 120px;
+  margin-bottom: -70px;
 }
 /*# sourceMappingURL=styles.css.map */

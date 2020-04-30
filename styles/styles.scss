@@ -4,6 +4,10 @@
   box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Amiri&display=swap');
+
+@import '../styles/calendar';
+@import '../styles/about';
 $primary-color: rgb(255, 255, 255);
 $hover-color: rgb(0, 0, 0);
 $background-color: #2a4359;
@@ -76,6 +80,7 @@ sans-serif;*/
       letter-spacing: 5px;
       color: $primary-color;
       font-size: 60px;
+      cursor: default;
     }
 
     a {
@@ -446,5 +451,40 @@ sans-serif;*/
         float: right;
       }
     }
+  }
+
+  footer {
+    background-color: rgb(41, 41, 41);
+
+    font-family: $muli;
+    color: rgb(255, 255, 255);
+
+
+    .footer-texts {
+      .footer-h1 {
+        padding: 150px;
+        cursor: default;
+
+
+        a {
+          padding-left: 20px;
+          text-decoration: none;
+          color: whitesmoke;
+          font-weight: 100;
+          transition: 0.2s;
+        }
+
+        a:hover {
+          color: rgb(146, 146, 146);
+        }
+      }
+
+      p {
+        text-align: center;
+        margin-top: 120px;
+        margin-bottom: -70px;
+      }
+    }
+
   }
 }
